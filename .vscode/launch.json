@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Day Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": "${fileBasenameNoExtension}.test",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Day Input",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": "${fileBasenameNoExtension}.input",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
