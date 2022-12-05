@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "args": "${fileBasenameNoExtension}.test",
+            "args": "test/${fileBasenameNoExtension}",
             "console": "integratedTerminal",
             "justMyCode": true
         },
@@ -18,7 +18,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "args": "${fileBasenameNoExtension}.input",
+            "args": "input/${fileBasenameNoExtension}",
             "console": "integratedTerminal",
             "justMyCode": true
         }
