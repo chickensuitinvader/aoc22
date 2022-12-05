@@ -1,3 +1,18 @@
+"""Determine overlaps in 1D
+
+Part I
+------
+Each line describes assignments for a pair of elves.
+Want to count the number of assignments where one assignment lies entirely within the other
+
+Part II
+-------
+Same structure.
+Want to count number of overlaps (partial and whole)
+
+Approach: Overlaps can be detected by endpoint comparisons only
+"""
+
 def read(fn):
     with open(fn, 'r') as fp:
         for ln in fp:

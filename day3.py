@@ -1,3 +1,22 @@
+"""Rucksack overalapping detection
+
+Part I
+------
+Each line is one elf's rucksack. Each line can be split (exactly in half) into two compartments
+Each line has one type of object that is in both compartments (overlaapping)
+The overlapping object can be assigned a priority:: a-z: 1-26; A-Z: 27-52
+Want to get the total priority for the overlapped items
+
+Part II
+-------
+Every three lines describes a group of elves.
+Each group of elves has one type of object in common
+Priority is allocated like Part I
+Want to get the total priority for the common objects of the groups
+
+Approach: use set intersections
+"""
+
 def read(fn):
     with open(fn, 'r') as fp:
         for ln in fp:

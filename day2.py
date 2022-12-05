@@ -1,3 +1,19 @@
+"""Determine the total csore from games of rock paper scissors when palyed from an encryted strategy guide
+
+Part I
+------
+Code is to be interpreted as: 1st value is opponent's play, 2nd value is our play
+Score each round is our play + outcome of the round
+
+Part II
+-------
+Code is to be interpreted as: 1st value is opponent's play, 2nd value is expected outcome
+Scoring system is the same
+
+Approach: Brute force iteration, with predefined dict lookups
+"""
+
+# map for Part I specifically (but common for ABC)
 code_for = {
     'A': 'rock',
     'B': 'paper',
@@ -8,27 +24,31 @@ code_for = {
     'Z': 'scissors',
 }
 
-
+# rock paper scissors logic
 beats = {
     'rock': 'scissors',
     'scissors': 'paper',
     'paper': 'rock',
 }
 
+# inverse logic for rock paper scissors
 loses = {v:k for k,v in beats.items()}
 
+# score for our play
 pscore = {
     'rock': 1,
     'paper': 2,
     'scissors': 3,
 }
 
+# score for the round (win/lose)
 wscore = {
     'win': 6,
     'draw': 3,
     'lose': 0,
 }
 
+# map for Part II
 result = {
     'X': 'lose',
     'Y': 'draw',

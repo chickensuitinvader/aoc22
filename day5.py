@@ -1,3 +1,24 @@
+"""Collection movement.
+
+Part I
+------
+First part of the file descirbes the initial condition, instances are stacked vertically.
+Objects are surrounded by square brackets.
+First part separated from second part by an emtpy line
+Second part describe movements of objects with numbers in form: number moved, from stack, to stack
+Movements are LIFO
+Determine the objects at the "top" at the end of movements
+
+Part II
+-------
+Same structure
+Movements are in FIFO chunks, but chunks are LIFO.
+Same output.
+
+Approach: Use deques, brute force iteration. We can use indexing to get objects of initial condition (objects are all 1 char), and regex to parse moves.
+"""
+
+
 from collections import deque
 import re
 
